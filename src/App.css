@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
+
+/* RESET */
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* STYLES */
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.562);
+}
+
+button {
+  cursor: pointer;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 2em;
+  border-radius: 4px;
+  background-color: #2e61aa;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.calculator input {
+  width: 100%;
+  height: 50%;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.left-section h4 {
+  margin-bottom: 0.5em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-weight: 700;
+  background-color: #264c84;
+  color: white;
+  transition: all 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #1b417a;
+}
+
+.buttons input {
+  width: 5em;
+  height: 2em;
+}
+
+.screen {
+  border: none;
+  padding: 2em;
+  width: 14em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: #86abde;
+}
+
+.tipAmount {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.total {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.screen button {
+  align-self: center;
+  margin-top: 40%;
+  width: 100%;
+  height: 20%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(163, 14, 14);
+  transition: all 0.4s;
+}
+.screen button:hover {
+  background-color: rgb(192, 20, 20);
+}
